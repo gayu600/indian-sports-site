@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Bharat Sports — India's Sports History, Tournaments & Achievements</title>
+  <meta name="description" content="A clean, responsive website showcasing India's sports history, key tournaments, and achievements. Built with HTML, CSS, and JavaScript."/>
+  <link rel="stylesheet" href="styles.css"/>
+  <link rel="icon" href="data:;base64,iVBORw0KGgo=">
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <!-- =========================================
+       Header & Navigation
+       ========================================= -->
+  <header class="header">
+    <div class="container header__inner">
+      <a href="#home" class="brand" aria-label="Bharat Sports Home">
+        <span class="brand__logo" aria-hidden="true">BS</span>
+        <span class="brand__text">Bharat<span>Sports</span></span>
+      </a>
+
+      <button class="nav-toggle" aria-expanded="false" aria-controls="primary-nav" aria-label="Toggle navigation">
+        <span class="nav-toggle__bar"></span>
+        <span class="nav-toggle__bar"></span>
+        <span class="nav-toggle__bar"></span>
+      </button>
+
+      <nav id="primary-nav" class="nav" aria-label="Main">
+        <ul class="nav__list">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#history">History</a></li>
+          <li><a href="#tournaments">Tournaments</a></li>
+          <li><a href="#achievements">Achievements</a></li>
+          <li><a href="#athletes">Athletes</a></li>
+          <li><a href="#gallery">Gallery</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- =========================================
+       Hero
+       ========================================= -->
+  <main id="home" class="hero section">
+    <div class="container hero__inner">
+      <div class="hero__text">
+        <h1>India in Sports</h1>
+        <p>Explore India's inspiring sports journey — from golden hockey eras to modern-day Olympic champions.</p>
+        <div class="hero__cta">
+          <a class="btn" href="#history">Start with History</a>
+          <a class="btn btn--ghost" href="#tournaments">See Tournaments</a>
+        </div>
+      </div>
+      <div class="hero__flag" aria-hidden="true">
+        <div class="flag flag--saffron"></div>
+        <div class="flag flag--white"></div>
+        <div class="flag flag--green"></div>
+      </div>
+    </div>
+  </main>
+
+  <!-- =========================================
+       History (Timeline)
+       ========================================= -->
+  <section id="history" class="section">
+  <div class="container">
+    <header class="section__header">
+      <h2 class="section__title">Sports History of India</h2>
+      <p class="section__subtitle">Milestones that shaped the nation’s sporting legacy.</p>
+    </header>
+      <div id="history-list" class="timeline">
+      <div class="card timeline__item">
+        <h3 class="timeline__year">1928</h3>
+        <p class="timeline__desc">India wins its first Olympic gold medal in hockey at Amsterdam.</p>
+      </div>
+      <div class="card timeline__item">
+        <h3 class="timeline__year">1983</h3>
+        <p class="timeline__desc">India lifts its first Cricket World Cup under Kapil Dev’s captaincy.</p>
+      </div>
+      <div class="card timeline__item">
+        <h3 class="timeline__year">2008</h3>
+        <p class="timeline__desc">Abhinav Bindra wins India’s first individual Olympic gold in shooting.</p>
+      </div>
+      <div class="card timeline__item">
+        <h3 class="timeline__year">2021</h3>
+        <p class="timeline__desc">Neeraj Chopra wins Olympic gold in javelin throw, creating history.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+  <!-- =========================================
+       Tournaments
+       ========================================= -->
+  <section id="tournaments" class="section section--alt">
+    <div class="container">
+      <header class="section__header">
+        <h2 class="section__title">Major Tournaments</h2>
+        <p class="section__subtitle">Explore the biggest stages and India's key moments.</p>
+      </header>
+
+      <div class="controls">
+        <input id="tournament-search" class="input" type="search" placeholder="Search tournaments (e.g., 'Cricket', 'Olympic')"
+               aria-label="Search tournaments"/>
+      </div>
+
+      <div id="tournament-list" class="grid grid--cards" aria-live="polite"></div>
+    </div>
+  </section>
+
+  <!-- =========================================
+       Achievements
+       ========================================= -->
+  <section id="achievements" class="section">
+    <div class="container">
+      <header class="section__header">
+        <h2 class="section__title">India’s Achievements</h2>
+        <p class="section__subtitle">A snapshot across popular sports.</p>
+      </header>
+
+      <div id="achievement-list" class="grid grid--cards grid--three" aria-live="polite"></div>
+    </div>
+  </section>
+
+  <!-- =========================================
+       Athletes
+       ========================================= -->
+  <section id="athletes" class="section section--alt">
+    <div class="container">
+      <header class="section__header">
+        <h2 class="section__title">Legendary Athletes</h2>
+        <p class="section__subtitle">Icons who raised the tricolour high.</p>
+      </header>
+
+      <div class="controls">
+        <input id="athlete-search" class="input" type="search" placeholder="Search athletes (e.g., 'Hockey', 'Neeraj')"
+               aria-label="Search athletes"/>
+      </div>
+
+      <div id="athlete-list" class="grid grid--people" aria-live="polite"></div>
+    </div>
+  </section>
+
+  <!-- =========================================
+       Gallery (static placeholders to start)
+       ========================================= -->
+  <section id="gallery" class="section">
+    <div class="container">
+      <header class="section__header">
+        <h2 class="section__title">Gallery</h2>
+        <p class="section__subtitle"></p>
+      </header>
+
+      <div id="gallery-grid" class="grid grid--gallery">
+        <!-- Filled by JS. Placeholders shown until you add real images. -->
+      </div>
+    </div>
+  </section>
+
+
+    <!-- =========================================
+       Contact (Updated)
+       ========================================= -->
+  <section id="contact" class="section section--alt">
+    <div class="container">
+      <header class="section__header">
+        <h2 class="section__title">Contact</h2>
+        <p class="section__subtitle">This is a static demo form — connect to a backend later.</p>
+      </header>
+
+      <!-- Centered Contact Box -->
+      <div class="contact-box">
+        <form class="form contact-form"
+              onsubmit="event.preventDefault(); alert('Thanks! This is a demo. Hook it to your backend.');">
+          <div class="form__row">
+            <label for="name" class="label">Name</label>
+            <input class="input" id="name" name="name" type="text" placeholder="Your name" required/>
+          </div>
+          <div class="form__row">
+            <label for="email" class="label">Email</label>
+            <input class="input" id="email" name="email" type="email" placeholder="you@example.com" required/>
+          </div>
+          <div class="form__row">
+            <label for="msg" class="label">Message</label>
+            <textarea class="input" id="msg" name="message" rows="4" placeholder="Your message"></textarea>
+          </div>
+          <button type="submit" class="btn">Send</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- =========================================
+       Footer
+       ========================================= -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <p>&copy; <span id="year"></span> Bharat Sports. Gayatri Chavhan❤️ .</p>
+      <a class="top-link" href="#home" aria-label="Back to top">↑</a>
+    </div>
+  </footer>
+</body>
+</html>

@@ -8,7 +8,7 @@ cards.forEach(card => {
   });
 });
 // ===========================================
-// Data — tweak & extend freely
+// Data — tweak & extend freely 
 // ===========================================
 const historyEvents = [
   { year: 1928, title: "First Olympic Hockey Gold", desc: "India won its first Olympic gold medal in field hockey at the Amsterdam Olympics." },
